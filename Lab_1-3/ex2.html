@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Моя вторая страница</title>
-        
+
         <style>
             .bgImg{
                 background-image: url(images/city.jpg);
@@ -9,11 +9,33 @@
                 background-repeat: no-repeat;
                 background-position: right top;
             }
+            /* ЛР 4. Задание 4 */
+            #firstDivStyle{
+                border: 2px solid blue;
+                margin-right: 70%;
+                position: static
+            }
+
+            /* ЛР 4. Задание 4 */
+            #secondDivStyle{
+                border: 5px dotted orange;
+                margin-right: 70%;
+
+                position: static;
+            }
+
+            /* ЛР 4. Задание 4 */
+            #thirdDivStyle{
+                font-size: 20px;
+                border: 1px solid black;
+                margin-right: 70%;
+            }
+
         </style>
     </head>
     <body class="bgImg">
         <h3>Заголовок 1</h3>
-        <div>
+        <div id="firstDivStyle">
             Элемент 1
             <h2>Изображение 1</h2>
             <a href="/ex1.html">
@@ -21,12 +43,37 @@
             </a>
             <span>©Alex Broflowski</span>
         </div>
+
         <h3>Заголовок 2</h3>
-        <div>
+        <div id="secondDivStyle">
             Элемент 2
             <h2>Изображение 2</h2>
             <img src="/images/retro.jpg" width="250px"><br>
             <span>© Sam Peterson</span>
+        </div>
+        <div id="thirdDivStyle">
+            <ul style="list-style-type: disc;">
+                <li>
+                    <a href="/Lab_4/Lab4_ex1.html">Задание 1</a>
+                </li>
+                <li>
+                    <a href="/Lab_4/Lab4_ex2.html">Задание 2</a>
+                </li>
+                <li>
+                    <a href="/Lab_4/Lab4_ex3.html">Задание 3</a>
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <a href="/Lab_1-3/ex2.html">Задание 4.1</a>
+                </li>
+                <li>
+                    <a href="/Lab_1-3/ex2.html">Задание 4.2</a>
+                </li>
+                <li>
+                    <a href="/Lab_1-3/ex2.html">Задание 4.3</a>
+                </li>
+            </ol>
         </div>
     </body>
 </html>
