@@ -12,9 +12,12 @@
             /* ЛР 4. Задание 4 */
             #firstDivStyle{
                 border: 2px solid blue;
-                
+
                 /* ЛР 5. Добавлен board-radius для проверки CSS3 */
                 border-radius: 3%;
+
+                /* ЛР 5. Смещение элемента на указанный промежуток*/
+                transform: translate(2px, 20px);
 
                 margin-right: 70%;
                 position: static
@@ -23,6 +26,10 @@
             /* ЛР 4. Задание 4 */
             #secondDivStyle{
                 border: 5px dotted orange;
+
+                /* ЛР 5. Растягивание элемента с помощью функции scale*/
+                transform: scale(1.01, 0.88);
+
                 margin-right: 70%;
 
                 position: static;
@@ -32,9 +39,23 @@
             #thirdDivStyle{
                 font-size: 20px;
                 border: 1px solid black;
+
+                /* ЛР 5. Закос элемента */
+                transform: skew(5deg, 5deg);
+
                 margin-right: 70%;
             }
 
+            /* ЛР 5. Дополнительный элемент для демонстрации трансформации */
+            #fourthDivStyle{
+                border: 2px solid green;
+                margin-right: 70%;
+                margin-top: 20px;
+                padding: 20px;
+                
+                /* ЛР 5. Переворот элемента */
+                transform: rotate(1.5turn);
+            }
         </style>
     </head>
     <body class="bgImg">
@@ -78,6 +99,11 @@
                     <a href="/Lab_1-3/ex2.html">Задание 4.3</a>
                 </li>
             </ol>
+        </div>
+
+        <!-- ЛР 5. Дополнительный элемент для демонстрации одного из способов трансформации -->
+        <div id="fourthDivStyle">
+            Демонстрация способа трансформации элемента
         </div>
     </body>
 </html>
