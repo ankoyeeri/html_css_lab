@@ -115,7 +115,7 @@
         }
 
         /* ЛР 3. Изменить цвет текста первого абзаца, используя first-child */
-        .testFirstChild :first-child{
+        p:first-child{
             color: lime;
         }
 
@@ -130,28 +130,18 @@
         p:first-line{
             text-decoration: underline black;
         }
-
-        /* ЛР 3. */
-        #aHrefID:before{
-            content: "студент I курса ";
-        }
-
-        /* ЛР 3. */
-        #aHrefID:after{
-            content: " проживающий по адресу Независимости";
-        }
 </style>
 
 </head>
 
 <body class="bgColor">
-    <h1>Я,<a href="/Lab_3/ex2.html" id="aHrefID">Гуз Ярослав Максимович</a>, изучаю <span style="color:red">HTML</span> и CSS</h1>
+    <h1>Я, <a href="/ex2.html">Гуз Ярослав Максимович</a>, изучаю <span style="color:red">HTML</span> и CSS</h1>
     <h2>Что такое HTML</h2>
     <h3>Определение HTML</h3>
-    <div class="testFirstChild">
         <p class="firstP">
             <!-- ЛР 3. Перед ФИО добавить текст "студент I курса", после ФИО -
         "проживающий по адресу ..." -->
+            Студент I курса Гуз Ярослав Максимович проживающий по адресу Независимости 25А <br><br>
             <span id="firstSpanId">HTML</span>
             (HyperText Markup Language —
             «язык гипертекстовой разметки») — самый
@@ -183,7 +173,6 @@
         стандарту ISO 8879). Спецификации <span style="color:black; border-bottom: dotted;">HTML5</span>
         формулируются в терминах DOM (объектной модели документа).
     </p>
-    </div>
 
     <div>
         <h2>Таблица элементов</h2>
@@ -228,7 +217,7 @@
     </div>
 
 
-    <!-- <div>
+    <div>
         Список с использованием маркера-картинки
         <ul class="listImageStyle">
             <li>
@@ -242,7 +231,7 @@
             </li>
         </ul>
 
-    </div> -->
+    </div>
 
     <div>
         <table border="1px">
