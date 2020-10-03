@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Моя вторая страница</title>
+
+        <style>
+            .bgImg{
+                background-image: url(images/city.jpg);
+                background-size: 300px;
+                background-repeat: no-repeat;
+                background-position: right top;
+            }
+            /* ЛР 4. Задание 4 */
+            #firstDivStyle{
+                border: 2px solid blue;
+
+                /* ЛР 5. Добавлен board-radius для проверки CSS3 */
+                border-radius: 3%;
+
+                /* ЛР 5. Смещение элемента на указанный промежуток*/
+                transform: translate(2px, 20px);
+
+                margin-right: 70%;
+                position: static
+            }
+
+            /* ЛР 4. Задание 4 */
+            #secondDivStyle{
+                border: 5px dotted orange;
+
+                /* ЛР 5. Растягивание элемента с помощью функции scale*/
+                transform: scale(1.01, 0.88);
+
+                margin-right: 70%;
+
+                position: static;
+            }
+
+            /* ЛР 4. Задание 4 */
+            #thirdDivStyle{
+                font-size: 20px;
+                border: 1px solid black;
+
+                /* ЛР 5. Закос элемента */
+                transform: skew(5deg, 5deg);
+
+                margin-right: 70%;
+            }
+
+            /* ЛР 5. Дополнительный элемент для демонстрации трансформации */
+            #fourthDivStyle{
+                border: 2px solid green;
+                margin-right: 70%;
+                margin-top: 20px;
+                padding: 20px;
+
+                /* ЛР 5. Переворот элемента */
+                transform: rotate(1.5turn);
+            }
+            /* ЛР 5. Демонстрация linear gradient */
+            #bgGradient{
+                background: linear-gradient(#949183, #e7c3a7)
+            }
+        </style>
+    </head>
+    <body class="bgImg" id="bgGradient">
+        <h3>Заголовок 1</h3>
+        <div id="firstDivStyle">
+            Элемент 1
+            <h2>Изображение 1</h2>
+            <a href="/Lab_5/ex1.html">
+                <img src="/images/view.png" width="250px"><br>
+            </a>
+            <span>©Alex Broflowski</span>
+        </div>
+
+        <h3>Заголовок 2</h3>
+        <div id="secondDivStyle">
+            Элемент 2
+            <h2>Изображение 2</h2>
+            <img src="/images/retro.jpg" width="250px"><br>
+            <span>© Sam Peterson</span>
+        </div>
+        <div id="thirdDivStyle">
+            <ul style="list-style-type: disc;">
+                <li>
+                    <a href="/Lab_4/Lab4_ex1.html">Задание 1</a>
+                </li>
+                <li>
+                    <a href="/Lab_4/Lab4_ex2.html">Задание 2</a>
+                </li>
+                <li>
+                    <a href="/Lab_4/Lab4_ex3.html">Задание 3</a>
+                </li>
+            </ul>
+            <ol>
+                <li>
+                    <a href="/Lab_1-3/ex2.html">Задание 4.1</a>
+                </li>
+                <li>
+                    <a href="/Lab_1-3/ex2.html">Задание 4.2</a>
+                </li>
+                <li>
+                    <a href="/Lab_1-3/ex2.html">Задание 4.3</a>
+                </li>
+            </ol>
+        </div>
+
+        <!-- ЛР 5. Дополнительный элемент для демонстрации одного из способов трансформации -->
+        <div id="fourthDivStyle">
+            Демонстрация способа трансформации элемента
+        </div>
+    </body>
+</html>
