@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Прыгающий шар</title>
+        
+        <style>
+            .ballElement{
+                width: 100px;
+                height: 100px;
+
+                left: 250px;
+
+                border: 5px solid green;
+                border-radius: 50%;
+
+                background-color: greenyellow;
+
+                position: relative;
+
+                animation-name: bouncingBall;
+                animation-duration: 1s;
+                animation-timing-function:cubic-bezier(0.42,0,1,1);
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+
+            @keyframes bouncingBall{
+                0%      { top: 0em;}
+                70%     { width: 100px; height: 100px; }
+                98%     { width: 105px; height: 80px; }
+                100%    { top: 20em; width: 115px; height: 70px; background-color: crimson; border-color: brown;}
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            Анимация, прыгающий шар
+        </h3>
+        <div>
+            <div class="ballElement">
+            </div>
+        </div>
+    </body>
+</html>

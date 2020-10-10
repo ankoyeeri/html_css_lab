@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Меню</title>
+        <style>
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            #menuMain{
+                display: flex;
+                list-style-type: none;
+            }
+
+            .menuMainElement{
+                display: block;
+            }
+
+            .menuMainElement a{
+                display: block;
+                border: 2px black double;
+                border-radius: 10%;
+
+                background-color: rgb(220, 181, 169);
+                
+                padding: 2px;
+
+                margin: 2px;
+                margin-bottom: auto;
+            }
+
+            .menuChildElement{
+                /* visibility: hidden; */
+                display: block;
+            }
+
+            .menuChildElement a{
+                border: 1px black solid;
+                background-color: rgb(220, 190, 180);
+                position: relative;
+
+                transition: all 0.3s ease;
+            }
+
+            .menuMainElement:hover .menuChildElement{
+                visibility: visible;
+                all: 0;
+            }
+
+
+        </style>
+    </head>
+    <body style="background-color: darkgrey;">
+        <span>
+            <ul id="menuMain">
+                <li class="menuMainElement">
+                    <a href="#">Лабораторная работа 1</a>
+                    <ul>
+                        <li class="menuChildElement"><a href="/Lab_1/ex1.html">ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_1/ex2.html">ex2.html</a></li>
+                    </ul>
+                </li>
+                <li class="menuMainElement">
+                    <a href="#">Лабораторная работа 2</a>
+                    <ul>
+                        <li class="menuChildElement"><a href="/Lab_2/ex1.html">ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_2/ex2.html">ex2.html</a></li>
+                    </ul>
+                </li>
+                <li class="menuMainElement">
+                    <a href="#">Лабораторная работа 3</a>
+                    <ul>
+                        <li class="menuChildElement"><a href="/Lab_3/ex1.html">ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_3/ex2.html">ex2.html</a></li>
+                    </ul>
+                </li>
+                <li class="menuMainElement">
+                    <a href="#">Лабораторная работа 4</a>
+                    <ul>
+                        <li class="menuChildElement"><a href="/Lab_4/ex1.html">ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_4/ex2.html">ex2.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_4/Lab4_ex1.html">Lab4_ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_4/Lab4_ex2.html">Lab4_ex2.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_4/Lab4_ex3.html">Lab4_ex3.html</a></li>
+                    </ul>
+                </li>
+                <li class="menuMainElement">
+                    <a href="#">Лабораторная работа 5</a>
+                    <ul>
+                        <li class="menuChildElement"><a href="/Lab_5/ex1.html">ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_5/ex2.html">ex2.html</a></li>
+                    </ul>
+                </li>
+                <li class="menuMainElement">
+                    <a href="#">Лабораторная работа 6</a>
+                    <ul>
+                        <li class="menuChildElement"><a href="/Lab_6/ex2_anim1.html">ex1.html</a></li>
+                        <li class="menuChildElement"><a href="/Lab_6/ex2_anim2.html">ex2.html</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </span>
+    </body>
+</html>
